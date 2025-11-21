@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico" type="image/x-icon"> 
   <style>
-    /* --- Full CSS for consistent styling on both pages (only unused form styles are left out here for cleanliness) --- */
+    /* --- CSS START --- */
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
@@ -109,6 +109,14 @@
       font-size: 0.9rem;
       border-top: 1px solid #224075;
     }
+    .contact-form { display: grid; gap: 1rem; margin-top: 1rem; }
+    .contact-form label { font-weight: 600; color: #333; margin-top: 0.5em; }
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea { width: 100%; padding: 0.8em; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; font-size: 1rem; font-family: inherit; }
+    .contact-form textarea { resize: vertical; min-height: 100px; }
+    .submit-btn { background: #3c77d2; color: #fff; border: none; cursor: pointer; padding: 0.8em 2em; border-radius: 6px; font-weight: 600; transition: background 0.2s; font-size: 1rem; }
+    .submit-btn:hover { background: #2952a3; }
     
     @media (max-width: 750px) {
       .hero {
@@ -119,6 +127,7 @@
         padding: 1.5em; 
       }
     }
+    /* --- CSS END --- */
   </style>
 </head>
 <body>
@@ -147,7 +156,7 @@
       <li>**Safe Pick Up & Return:** Convenient local service in Toronto, ON, ensuring the safe handling of your originals.</li>
       <li>**Fast Digital Delivery:** Receive your files via secure cloud link or high-speed USB drive.</li>
     </ul>
-    </div>
+  </div>
 
   <div class="section" id="gallery">
     <h2>Sample Gallery: Before & After</h2>
