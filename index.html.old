@@ -1,0 +1,167 @@
+xml
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Scan - Photo Digitizing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #222;
+    }
+    header {
+      background: #003366;
+      color: #fff;
+      padding: 2rem 0 1rem 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin: 0.5rem 0 1.5rem 0;
+      font-size: 1.2rem;
+      color: #dbe6f6;
+    }
+    nav {
+      background: #fff;
+      text-align: center;
+      padding: 0.5em 0;
+      border-bottom: 1px solid #eee;
+    }
+    nav a {
+      margin: 0 1em;
+      color: #003366;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      max-width: 900px;
+      margin: 2rem auto 1.5rem auto;
+      padding: 1em;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .hero img {
+      max-width: 240px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+    .cta-btn {
+      display: inline-block;
+      color: #fff;
+      background: #003366;
+      padding: 0.8em 2em;
+      border-radius: 6px;
+      font-size: 1rem;
+      margin-top: 1em;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .cta-btn:hover {
+      background: #2952a3;
+    }
+    .section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2em;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.4rem;
+      justify-content: center;
+      margin-top: 1.5em;
+    }
+    .gallery img {
+      width: 160px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid #eee;
+    }
+    footer {
+      background: #003366;
+      color: #dbe6f6;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+      font-size: 0.9rem;
+      border-top: 1px solid #224075;
+    }
+    @media (max-width: 750px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Memory Scan</h1>
+    <p>Preserve Your Memories – Professional Photo Scanning</p>
+  </header>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="hero">
+    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=400" alt="Scanning old photo sample">
+    <div>
+      <h2>Relive Your Memories</h2>
+      <p>We turn your precious prints into high-quality, shareable digital files—safe, secure, and ready for generations to enjoy.</p>
+      <a class="cta-btn" href="#contact">Request a Quote</a>
+    </div>
+  </div>
+
+  <div class="section" id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Standard & high-resolution photo scanning</li>
+      <li>Color, contrast, and dust correction</li>
+      <li>Photo restoration (optional)</li>
+      <li>Safe return of all originals</li>
+      <li>Fast digital delivery (cloud or USB drive)</li>
+    </ul>
+  </div>
+
+  <div class="section" id="gallery">
+    <h2>Sample Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?w=400" alt="Before scan">
+      <img src="https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?w=400" alt="After scan">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400" alt="Restored photo">
+      <img src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?w=400" alt="Family photo digitized">
+    </div>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@memoryscan.com<br>
+    Phone: (555) 123-4567</p>
+    <p>Toronto, ON</p>
+  </div>
+  <footer>
+    Memory Scan © 2025 | Scanning your past for the future.
+  </footer>
+</body>
+</html>
