@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>DigitizeThisPhoto - Professional Photo Scanning</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+  <link rel="icon" href="favicon.ico" type="image/x-icon"> 
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
@@ -109,55 +109,13 @@
       border-top: 1px solid #224075;
     }
     
-    /* --- NEW CONTACT FORM STYLES --- */
-    .contact-form {
-      display: grid;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    .contact-form label {
-      font-weight: 600;
-      color: #333;
-      margin-top: 0.5em;
-    }
-    .contact-form input[type="text"],
-    .contact-form input[type="email"],
-    .contact-form textarea {
-      width: 100%;
-      padding: 0.8em;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      box-sizing: border-box;
-      font-size: 1rem;
-      font-family: inherit;
-    }
-    .contact-form textarea {
-      resize: vertical;
-      min-height: 100px;
-    }
-    .submit-btn {
-      background: #3c77d2;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      padding: 0.8em 2em;
-      border-radius: 6px;
-      font-weight: 600;
-      transition: background 0.2s;
-      font-size: 1rem;
-    }
-    .submit-btn:hover {
-      background: #2952a3;
-    }
-    /* --- END NEW CONTACT FORM STYLES --- */
-
     @media (max-width: 750px) {
       .hero {
         flex-direction: column;
         text-align: center;
       }
       .hero, .section {
-        padding: 1.5em; /* Adjusted padding for better mobile spacing */
+        padding: 1.5em; 
       }
     }
   </style>
@@ -170,15 +128,13 @@
   <nav>
     <a href="#services">Services</a>
     <a href="#gallery">Gallery</a>
-    <a href="#contact">Quote & Contact</a>
-  </nav>
+    <a href="quote.html">Quote & Contact</a>   </nav>
   <div class="hero">
     <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=400" alt="Scanning old photo sample">
     <div>
       <h2>Relive Your Memories</h2>
       <p>We turn your precious prints into high-quality, shareable digital files—safe, secure, and ready for generations to enjoy. **Starting at just $0.35 per photo.**</p>
-      <a class="cta-btn" href="#contact">Request a Free Quote</a>
-    </div>
+      <a class="cta-btn" href="quote.html">Request a Free Quote</a>     </div>
   </div>
 
   <div class="section" id="services">
@@ -203,27 +159,8 @@
   </div>
 
   <div class="section" id="contact">
-    <h2>Get Your Free Quote</h2>
-    <p>Fill out the form below or call us to discuss your photo digitizing needs. We'll get back to you within one business day!</p>
-    <form class="contact-form" action="SUBMIT_FORM_ENDPOINT_HERE" method="POST">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="phone">Phone (Optional)</label>
-      <input type="text" id="phone" name="phone">
-
-      <label for="message">Details / Estimated Quantity of Photos</label>
-      <textarea id="message" name="message" required></textarea>
-
-      <button type="submit" class="submit-btn">Send Quote Request</button>
-    </form>
-    
-    <hr style="margin: 2em 0; border: 0; border-top: 1px solid #eee;">
-
-    <h3>Or Call/Email Directly</h3>
+    <h2>Contact Us</h2>
+    <p>Ready for a quote? Click the **Quote & Contact** link in the navigation or reach out directly:<p>
     <p>Email: <a href="mailto:info@digitizethisphoto.com">info@digitizethisphoto.com</a><br>
     Phone: 416.479.9549</p>
     <p>Serving the **Toronto, ON** area.</p>
