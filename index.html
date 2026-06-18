@@ -59,27 +59,31 @@
       display: block;
     }
 
-    /* HERO */
+    /* NEW HERO SECTION - FEATURING BOTH CHARACTERS UNTOUCHED ON LEFT */
     .hero {
       max-width: 1100px;
       margin: 1.5rem auto 1.5rem auto;
-      padding: 1.8em;
-      background: #fff;
+      background-color: #ffffff;
+      background-image: url('services/generated-image2.jpg');
+      background-size: contain; 
+      background-repeat: no-repeat;
+      background-position: left center;
       border-radius: 12px;
       box-shadow: 0 2px 14px rgba(0,0,0,0.06);
       display: flex;
       align-items: center;
-      gap: 2rem;
-      min-height: 40vh;
+      justify-content: flex-end; 
+      min-height: 45vh;
     }
-    .hero img {
-      max-width: 340px;
-      border-radius: 10px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    
+    .hero-text {
+      max-width: 440px;
+      padding: 2.5rem;
     }
     .hero-text h2 {
       margin-top: 0;
       font-size: 1.9rem;
+      color: #003366;
     }
     .hero-text p {
       font-size: 1rem;
@@ -89,6 +93,7 @@
       font-size: 1.1rem;
       margin-bottom: 0.8rem;
       color: #345c96;
+      font-weight: 600;
     }
     .cta-btn {
       display: inline-block;
@@ -210,8 +215,8 @@
       display: flex;
       flex-wrap: wrap;
       gap: 1.4rem;
-      justify-content: center;
       margin-top: 1.5em;
+      justify-content: center;
     }
     .before-after {
       width: 220px;
@@ -283,15 +288,6 @@
       font-size: 0.95rem;
     }
 
-    .contact-details {
-      font-size: 1rem;
-      line-height: 1.7;
-    }
-    .hours {
-      margin-top: 0.8rem;
-      font-size: 0.95rem;
-      color: #444;
-    }
     footer {
       background: #003366;
       color: #dbe6f6;
@@ -302,14 +298,20 @@
       border-top: 1px solid #224075;
     }
 
-    @media (max-width: 850px) {
+    @media (max-width: 900px) {
       .hero {
-        flex-direction: column;
-        text-align: center;
+        background-image: url('services/generated-image2.jpg');
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
         min-height: auto;
       }
-      .hero img {
-        max-width: 90%;
+      .hero-text {
+        background: rgba(255, 255, 255, 0.94);
+        border-radius: 12px;
+        margin: 1.5rem;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
       }
       nav a {
         display: inline-block;
@@ -326,7 +328,7 @@
   </header>
 
   <div class="top-image-wrapper">
-    <img src="generated-image2.jpg" alt="Pickup of a box of old family photos in front of a home">
+    <img src="services/generated-image2.jpg" alt="Pickup of a box of old family photos in front of a home">
   </div>
 
   <nav>
@@ -340,7 +342,6 @@
   </nav>
 
   <div class="hero">
-    <img src="generated-image2.jpg" alt="David accepting a box of old photos from a customer">
     <div class="hero-text">
       <p class="hero-subtitle">Preserve Your Precious Memories</p>
       <h2>Professional Photo Scanning for Families &amp; Generations</h2>
@@ -559,4 +560,14 @@
     <div class="faq-item">
       <h3>How long does it take?</h3>
       <p>
-        Most projects are completed within 7–10 business days, depending on the number of photos. We’ll give you a timeframe with your
+        Most projects are completed within 7–10 business days, depending on the number of photos. We’ll give you a timeframe with your quote.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Digitize This Photo. All rights reserved. Toronto, Ontario.</p>
+  </footer>
+
+</body>
+</html>
