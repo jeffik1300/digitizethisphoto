@@ -59,12 +59,12 @@
       display: block;
     }
 
-    /* NEW HERO SECTION - FEATURING BOTH CHARACTERS UNTOUCHED ON LEFT */
+    /* NEW HERO SECTION - FIXED DIRECT PATH, CHARACTERS CLEAR ON LEFT */
     .hero {
       max-width: 1100px;
       margin: 1.5rem auto 1.5rem auto;
       background-color: #ffffff;
-      background-image: url('services/generated-image2.jpg');
+      background-image: url('generated-image2.jpg'); /* Fixed direct path */
       background-size: contain; 
       background-repeat: no-repeat;
       background-position: left center;
@@ -300,7 +300,7 @@
 
     @media (max-width: 900px) {
       .hero {
-        background-image: url('services/generated-image2.jpg');
+        background-image: url('generated-image2.jpg'); /* Fixed path */
         background-size: cover;
         background-position: center;
         justify-content: center;
@@ -327,8 +327,9 @@
     <p>Preserve Your Precious Memories – Professional Photo Scanning for Families &amp; Generations</p>
   </header>
 
+  <!-- FIXED BANNER IMAGE PATH -->
   <div class="top-image-wrapper">
-    <img src="services/generated-image2.jpg" alt="Pickup of a box of old family photos in front of a home">
+    <img src="generated-image2.jpg" alt="Pickup of a box of old family photos in front of a home">
   </div>
 
   <nav>
@@ -341,6 +342,7 @@
     <a href="#contact">Contact</a>
   </nav>
 
+  <!-- CLEAN CLEANED HERO SECTION WITH NO BROKEN IMG TAGS -->
   <div class="hero">
     <div class="hero-text">
       <p class="hero-subtitle">Preserve Your Precious Memories</p>
