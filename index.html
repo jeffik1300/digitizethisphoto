@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digitize This Photo - Professional Photo Scanning in Toronto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Preserve your precious memories with professional photo scanning for families and generations. Simple pricing, secure handling, and friendly service in Toronto.">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #222;
+    }
+    header {
+      background: #003366;
+      color: #fff;
+      padding: 1.5rem 0 1rem 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin: 0.5rem 0 1rem 0;
+      font-size: 1.1rem;
+      color: #dbe6f6;
+    }
+    nav {
+      background: #fff;
+      text-align: center;
+      padding: 0.5em 0;
+      border-bottom: 1px solid #eee;
+    }
+    nav a {
+      margin: 0 1em;
+      color: #003366;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Top banner image wrapper */
+    .top-image-wrapper {
+      max-width: 1100px;
+      margin: 1.5rem auto 0 auto;
+      padding: 0 1rem;
+    }
+    .top-image-wrapper img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.06);
+      display: block;
+    }
+
+    /* NEW HERO SECTION - UPDATED WITH CORRECT REPOSITORY IMAGE NAME */
+    .hero {
+      max-width: 1100px;
+      margin: 1.5rem auto 1.5rem auto;
+      background-color: #ffffff;
+      background-image: url('DigitizeThisPhoto_Email_With_Illustration.png'); 
+      background-size: contain; 
+      background-repeat: no-repeat;
+      background-position: left center;
+      border-radius: 12px;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; 
+      min-height: 45vh;
+    }
+    
+    .hero-text {
+      max-width: 440px;
+      padding: 2.5rem;
+    }
+    .hero-text h2 {
+      margin-top: 0;
+      font-size: 1.9rem;
+      color: #003366;
+    }
+    .hero-text p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .hero-subtitle {
+      font-size: 1.1rem;
+      margin-bottom: 0.8rem;
+      color: #345c96;
+      font-weight: 600;
+    }
+    .cta-btn {
+      display: inline-block;
+      color: #fff;
+      background: #003366;
+      padding: 0.9em 2.4em;
+      border-radius: 6px;
+      font-size: 1rem;
+      margin-top: 1em;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+      cursor: pointer;
+    }
+    .cta-btn:hover {
+      background: #2952a3;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2em;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+    }
+    .section h2 {
+      margin-top: 0;
+    }
+
+    .problem-solution {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .problem, .solution {
+      flex: 1 1 260px;
+      min-width: 0;
+    }
+    .problem h3, .solution h3 {
+      margin-top: 0;
+      color: #003366;
+      font-size: 1.1rem;
+    }
+    .problem ul, .solution ul {
+      padding-left: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .pricing-tiers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.4rem;
+      margin-top: 1.3rem;
+    }
+    .pricing-card {
+      flex: 1 1 250px;
+      border-radius: 10px;
+      border: 1px solid #e1e7f0;
+      padding: 1.2rem;
+      background: #f8fafc;
+      font-size: 0.95rem;
+    }
+    .pricing-card h3 {
+      margin-top: 0;
+      font-size: 1.05rem;
+      color: #003366;
+    }
+    .pricing-card strong {
+      font-size: 1.1rem;
+    }
+    .badge-popular {
+      display: inline-block;
+      background: #ffd700;
+      color: #333;
+      font-size: 0.8rem;
+      padding: 0.1rem 0.45rem;
+      border-radius: 999px;
+      margin-left: 0.4rem;
+    }
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.3rem;
+      font-size: 0.95rem;
+    }
+    .pricing-table th,
+    .pricing-table td {
+      border: 1px solid #e1e7f0;
+      padding: 0.6rem 0.8rem;
+      text-align: left;
+    }
+    .pricing-table th {
+      background: #f0f4fa;
+      color: #003366;
+    }
+
+    .how-steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.4rem;
+      margin-top: 1.3rem;
+    }
+    .how-step {
+      flex: 1 1 220px;
+      background: #f8fafc;
+      border-radius: 10px;
+      padding: 1rem;
+      border: 1px solid #e1e7f0;
+      font-size: 0.95rem;
+    }
+    .how-step h3 {
+      margin: 0 0 0.4rem 0;
+      font-size: 1rem;
+      color: #003366;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.4rem;
+      margin-top: 1.5em;
+      justify-content: center;
+    }
+    .before-after {
+      width: 220px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #eee;
+      background: #fafafa;
+      font-size: 0.85rem;
+    }
+    .before-after img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      display: block;
+    }
+    .before-after div {
+      padding: 0.4rem 0.7rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.4rem;
+      margin-top: 1.3rem;
+    }
+    .testimonial {
+      flex: 1 1 260px;
+      border-radius: 10px;
+      border: 1px solid #e1e7f0;
+      padding: 1rem;
+      background: #f8fafc;
+      font-size: 0.95rem;
+    }
+    .testimonial-name {
+      margin-top: 0.6rem;
+      font-weight: 600;
+      color: #003366;
+      font-size: 0.9rem;
+    }
+
+    .cta-multi {
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    .cta-phone {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #003366;
+      margin: 0.5rem 0;
+    }
+    .cta-inline-btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1rem;
+    }
+    .faq-item h3 {
+      margin: 0 0 0.3rem 0;
+      font-size: 1rem;
+      color: #003366;
+    }
+    .faq-item p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: #003366;
+      color: #dbe6f6;
+      text-align: center;
+      padding: 1.2em;
+      margin-top: 2em;
+      font-size: 0.9rem;
+      border-top: 1px solid #224075;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        background-image: url('DigitizeThisPhoto_Email_With_Illustration.png'); 
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+        min-height: auto;
+      }
+      .hero-text {
+        background: rgba(255, 255, 255, 0.94);
+        border-radius: 12px;
+        margin: 1.5rem;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      }
+      nav a {
+        display: inline-block;
+        margin: 0.2em 0.6em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Digitize This Photo</h1>
+    <p>Preserve Your Precious Memories – Professional Photo Scanning for Families &amp; Generations</p>
+  </header>
+
+  <!-- BANNER IMAGE FEEDS DIRECTLY FROM ROOT REPOSITORY FILE -->
+  <div class="top-image-wrapper">
+    <img src="DigitizeThisPhoto_Email_With_Illustration.png" alt="Pickup of a box of old family photos in front of a home">
+  </div>
+
+  <nav>
+    <a href="#problem">Why This Matters</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#how">How It Works</a>
+    <a href="#gallery">Before &amp; After</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- HERO SECTION WITH BACKGROUND ILLUSTRATION MAPPED CORRECTLY -->
+  <div class="hero">
+    <div class="hero-text">
+      <p class="hero-subtitle">Preserve Your Precious Memories</p>
+      <h2>Professional Photo Scanning for Families &amp; Generations</h2>
+      <p>
+        We gently digitize your printed photos and return them as simple digital folders you and your family
+        can enjoy on phones, tablets, and TVs—without boxes and clutter.
+      </p>
+      <a class="cta-btn" href="#contact">Get a Free Quote</a>
+    </div>
+  </div>
+
+  <div class="section" id="problem">
+    <h2>Your Memories Are Fading...</h2>
+    <div class="problem-solution">
+      <div class="problem">
+        <h3>The Problem</h3>
+        <p>
+          Photos yellowing? Digital files lost? Hard drives failing? Physical damage can slowly erase your family’s history.
+        </p>
+        <ul>
+          <li>Photos yellowing and colours fading over time.</li>
+          <li>Old CDs, DVDs, or hard drives that may no longer work.</li>
+          <li>Loose photos scattered across albums, boxes, and drawers.</li>
+          <li>Family unable to see pictures unless they visit in person.</li>
+        </ul>
+      </div>
+      <div class="solution">
+        <h3>We Make It Simple</h3>
+        <p>Our service is designed to be easy, safe, and worry‑free.</p>
+        <ul>
+          <li>Free consultation before you decide.</li>
+          <li>Home pickup available for larger collections (where offered).</li>
+          <li>Secure handling of your photos from start to finish.</li>
+          <li>Fast turnaround so you can share quickly.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="pricing">
+    <h2>Simple, Clear Pricing</h2>
+    <p>Choose the option that matches how many photos you have and how you plan to use them.</p>
+
+    <div class="pricing-tiers">
+      <div class="pricing-card">
+        <h3>Tier 1: BASIC</h3>
+        <p><strong>$0.39 per photo</strong></p>
+        <ul>
+          <li>Standard‑quality scans for everyday prints up to 8×10 inches.</li>
+          <li>Ideal for viewing on phones, tablets, and TVs.</li>
+          <li>Basic colour and contrast adjustment.</li>
+        </ul>
+      </div>
+      <div class="pricing-card">
+        <h3>Tier 2: PREMIUM <span class="badge-popular">Popular</span></h3>
+        <p><strong>$0.65 per photo</strong></p>
+        <ul>
+          <li>Higher‑resolution scans for important photos and light cropping.</li>
+          <li>Smoother, clearer results for sharing and re‑printing.</li>
+          <li>More careful adjustment of colour and brightness.</li>
+        </ul>
+      </div>
+      <div class="pricing-card">
+        <h3>Tier 3: LEGACY</h3>
+        <p><strong>$1.25 per photo</strong></p>
+        <ul>
+          <li>For your most treasured photos and heirloom collections.</li>
+          <li>Highest‑quality scans and extra attention to detail.</li>
+          <li>Best option if you plan to make books or large prints.</li>
+        </ul>
+      </div>
+    </div>
+
+    <table class="pricing-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>BASIC</th>
+          <th>PREMIUM</th>
+          <th>LEGACY</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Per‑photo price</td>
+          <td>$0.39</td>
+          <td>$0.65</td>
+          <td>$1.25</td>
+        </tr>
+        <tr>
+          <td>Scan resolution</td>
+          <td>Standard</td>
+          <td>High</td>
+          <td>Highest</td>
+        </tr>
+        <tr>
+          <td>Ideal use</td>
+          <td>Everyday viewing</td>
+          <td>Sharing &amp; re‑printing</td>
+          <td>Photo books &amp; large prints</td>
+        </tr>
+        <tr>
+          <td>Colour &amp; contrast adjustment</td>
+          <td>Basic</td>
+          <td>Enhanced</td>
+          <td>Careful, per‑photo attention</td>
+        </tr>
+        <tr>
+          <td>Heirloom / most treasured photos</td>
+          <td>Occasional</td>
+          <td>Recommended</td>
+          <td>Best choice</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p style="font-size:0.9rem; color:#555; margin-top:0.8rem;">
+      We’re happy to create a custom quote for very large collections or special projects.
+    </p>
+  </div>
+
+  <div class="section" id="how">
+    <h2>How It Works – 4 Simple Steps</h2>
+    <div class="how-steps">
+      <div class="how-step">
+        <h3>1. Call, Email, or Fill Form</h3>
+        <p>
+          Reach out by phone, email, or the contact form below to get a free quote based on how many photos you have and what you need.
+        </p>
+      </div>
+      <div class="how-step">
+        <h3>2. We Arrange Pickup</h3>
+        <p>
+          We will arrange pickup of your photos (where available) or help you with drop‑off or safe shipping from your home.
+        </p>
+      </div>
+      <div class="how-step">
+        <h3>3. Review &amp; Share</h3>
+        <p>
+          Your photos are scanned and provided via secure cloud folder and/or USB drive, ready for you to review and share.
+        </p>
+      </div>
+      <div class="how-step">
+        <h3>4. Enjoy With Family – Forever</h3>
+        <p>
+          Enjoy your memories on phones, tablets, TVs, and computers—without worrying about damage or loss.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="gallery">
+    <h2>Before &amp; After – See the Difference</h2>
+    <p>Here are examples of how a faded photo can become clear and easy to enjoy again.</p>
+    <div class="gallery">
+      <div class="before-after">
+        <img src="before1.jpg" alt="Faded original photo">
+        <div><span>Before</span><span>After</span></div>
+        <img src="after1.jpg" alt="Restored, digitized photo">
+      </div>
+      <div class="before-after">
+        <img src="before2.jpg" alt="Faded original photo">
+        <div><span>Before</span><span>After</span></div>
+        <img src="after2.jpg" alt="Restored, digitized photo">
+      </div>
+      <div class="before-after">
+        <img src="before3.jpg" alt="Faded original photo">
+        <div><span>Before</span><span>After</span></div>
+        <img src="after3.jpg" alt="Restored, digitized photo">
+      </div>
+    </div>
+    <p style="font-size:0.9rem; color:#555; margin-top:1rem;">
+      A slider gallery can be added later to show side‑by‑side transformations if you prefer a more interactive view.
+    </p>
+  </div>
+
+  <div class="section" id="testimonials">
+    <h2>Testimonials</h2>
+    <p>Future video testimonials can be added here in a simple carousel, alongside short text reviews.</p>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>“Best decision we made. Now all our old family photos are easy to see and share with the grandkids.”</p>
+        <div class="testimonial-name">– Margaret T.</div>
+      </div>
+      <div class="testimonial">
+        <p>“Easy process, great results. They handled everything and the digitized photos look wonderful.”</p>
+        <div class="testimonial-name">– Dave R.</div>
+      </div>
+      <div class="testimonial">
+        <p>“I was nervous about sending my only copies, but everything came back safely along with beautiful digital versions.”</p>
+        <div class="testimonial-name">– Customer in Toronto</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Ready to Get Started?</h2>
+    <div class="cta-multi">
+      <p>Choose the way that feels most comfortable for you.</p>
+      <p class="cta-phone">Call Us: <a href="tel:14164799549" style="color:#003366; text-decoration:none;">416‑479‑9549</a></p>
+      <p>or</p>
+      <a class="cta-btn cta-inline-btn" href="#contact">Get Instant Quote</a>
+    </div>
+  </div>
+
+  <div class="section" id="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>Are my photos safe and private?</h3>
+      <p>
+        Yes. We handle every photo with care and do all work locally. Your images are never shared with anyone outside our team.
+      </p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How long does it take?</h3>
+      <p>
+        Most projects are completed within 7–10 business days, depending on the number of photos. We’ll give you a timeframe with your quote.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Digitize This Photo. All rights reserved. Toronto, Ontario.</p>
+  </footer>
+
+</body>
+</html>
